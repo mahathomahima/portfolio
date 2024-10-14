@@ -1,0 +1,237 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-size: 1rem;
+}
+header {
+    background: #333;
+    color: #ffff;
+    padding: 25px;
+}
+img{
+    height: 30px;
+    width: 30px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover{
+    color: goldenrod;
+}
+
+#hero {
+    background-color: #f4f4f4;
+    padding: 4rem;
+}
+#hero .hero_content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hero_content{
+    display: grid;
+    place-items: center;
+}
+.hero_img{
+    height: 300px;
+    width: 200px;
+    border-radius: 250px;
+}
+#hero h1{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.hello_text{
+    color: yellowgreen;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.name_text{
+    font-size: 1rem;
+    font-weight: bold;
+}
+#hero .name{
+    font-size: 2rem;
+    font-weight: bold;
+
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 5s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+    from{
+        width: 0;
+    }to{
+        width: 100%;
+    }
+}
+@keyframes blink-caret {
+    from,to{
+        border-color: transparent;
+    }50%{
+        border-color: orange;
+    }
+}
+
+.intro, .projects-preview, .projects, .about, .contact {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+.profile-pic{
+    height: 250px;
+    width: 250px;
+    border-radius: 100px;
+}
+
+
+.project-item {
+    margin-bottom: 20px;
+}
+.image{
+    height: 300px;
+    width: 250px;
+    border: white 2px solid;
+}
+main, .main-heading{
+    background-color: rgb(199, 239, 252);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#projects .main-heading{
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(147, 196, 196);
+    padding: 2rem;
+}
+.grid_item{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    place-items: center;
+    grid: 2rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-radius: 0.8rem;
+    transition: 0.2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+}
+.card:hover img{
+    transform: scale(1.05);
+    transition: 0.3ss ease-in-out;
+    opacity: 0.8;
+}
+.card_content{
+    padding: 2rem;
+    position: relative;
+    top: -6rem;
+    margin-bottom: -6rem;
+    transition: 0.5s ease-in-out;
+    text-align: center;
+    transform: translateY(100px);
+}
+.card:hover .card_content{
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    color: black;
+    transform: translateY(0px);
+}
+.project_container{
+    background-color: aliceblue;
+    padding-top: 20px;
+    text-align: center;
+    color: lightblue;
+}
+.button_con{
+    display: flex;
+    justify-content: flex-end;
+  align-items: flex-end;
+  padding: 10px;
+}
+.button {
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #d3cdf6 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(235, 225, 243, 0.951) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.button:active,
+.button:hover {
+  outline: 0;
+}
+.button span {
+  background-color: rgb(200, 200, 228);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+.button:hover span {
+  background: none;
+}
+@media (min-width: 768px) {
+  .button {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+.profile-photo{
+    height: 150px;
+    width: 150px;
+    border-radius: 40px;
+}
